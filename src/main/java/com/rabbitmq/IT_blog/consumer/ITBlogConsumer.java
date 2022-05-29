@@ -13,6 +13,7 @@ public class ITBlogConsumer {
     public static void main(String[] args) throws Exception {
         ConnectionFactory factory = new ConnectionFactory();
         factory.setHost("localhost");
+
         factory.setPort(8080);
         Connection connection = factory.newConnection();
         Channel channel = connection.createChannel();
